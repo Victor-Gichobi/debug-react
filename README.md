@@ -1,74 +1,163 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# React Debugging with React Developer Tools
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This project demonstrates how to debug a React application using the **React Developer Tools** browser extension. The application contains multiple components that use **state** and **props**, allowing users to inspect component data, identify issues, and apply fixes using the React Developer Tools.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Multiple React components
+* State management with `useState`
+* Props passing between components
+* Counter functionality
+* React Developer Tools inspection
+* Debugging of common React issues
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React
+* JavaScript (ES6)
+* HTML5
+* CSS3
+* React Developer Tools
+* Create React App
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/react-debug-app.git
+```
 
-### `npm run eject`
+### 2. Navigate to the project folder
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd react-debug-app
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Start the development server
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application will open at:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+http://localhost:3000
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## React Developer Tools
 
-### Analyzing the Bundle Size
+Install the **React Developer Tools** extension for your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+After installation:
 
-### Making a Progressive Web App
+1. Run the React application.
+2. Open the browser Developer Tools (F12 or Right Click → Inspect).
+3. Select the **Components** tab.
+4. Inspect the component tree, props, and state.
+5. Use the information to identify and fix issues.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Debugging Process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The following issues were identified and fixed:
 
-### Deployment
+### Incorrect State Initialization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Issue**
 
-### `npm run build` fails to minify
+The counter state was initialized as a string instead of a number.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# debug-react
->>>>>>> 5a4d7886474f08acb44cea5a0a7801f102b82f38
+**Fix**
+
+Changed:
+
+```jsx
+useState("0")
+```
+
+to
+
+```jsx
+useState(0)
+```
+
+---
+
+
+## Verification
+
+After applying the fixes:
+
+* ✅ Components rendered correctly.
+* ✅ Props were passed successfully.
+* ✅ State updated correctly.
+* ✅ Counter functioned as expected.
+* ✅ No unexpected behavior remained.
+
+---
+
+## Project Structure
+
+```
+src/
+│── components/
+│   ├── Profile.js
+│  
+│   
+│
+├── App.js
+├── index.js
+└── App.css
+```
+
+---
+
+## Screenshots
+
+### React Developer Tools Components tab
+<img src="./Screenshots/Screenshot (3).png" alt="Screenshot">
+
+### Working counter after debugging
+<img src="./Screenshots/Screenshot (5).png" alt="Screenshot">
+
+### Terminal after solving
+<img src="./Screenshots/Screenshot (4).png" alt="Screenshot">
+
+ 
+## Learning Outcomes
+
+By completing this project, I learned how to:
+
+* Use React Developer Tools effectively.
+* Inspect component trees.
+* Debug React state.
+* Verify props passed between components.
+* Diagnose rendering issues.
+* Apply React best practices for state management.
+
+---
+
+## Author
+
+Victor Gichobi
+
+

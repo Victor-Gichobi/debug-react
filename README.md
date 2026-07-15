@@ -141,7 +141,7 @@ src/
 
 ### Terminal after solving
 <img src="Screenshots\Screenshot (5).png" alt="Screenshot">
-
+![Screenshot](./Screenshots/screenshot(4).png)
  
 ## Learning Outcomes
 

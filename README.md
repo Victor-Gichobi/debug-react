@@ -134,13 +134,13 @@ src/
 ## Screenshots
 
 ### React Developer Tools Components tab
-<img src="./Screenshots/Screenshot (3).png" alt="Screenshot">
+<img src="/Screenshots/Screenshot (3).png" alt="Screenshot">
 
 ### Working counter after debugging
-<img src="./Screenshots/Screenshot (5).png" alt="Screenshot">
+<img src="/Screenshots/Screenshot (5).png" alt="Screenshot">
 
 ### Terminal after solving
-<img src="./Screenshots/Screenshot (4).png" alt="Screenshot">
+<img src="Screenshots\Screenshot (5).png" alt="Screenshot">
 
  
 ## Learning Outcomes
